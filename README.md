@@ -59,8 +59,6 @@ If you encounter problems related to rendering, please refer to respiratory of
 
 ## Visualization
 
-The following videos show the performance in the perturbed environments. The video consists of three parts: left, middle, and right. The left part represents $o_t \in \mathbb{R}^{C\times W \times H}$, the observation of the perturbed environment with $C$ channels, width $W$ and height $H$ at time $t$. The middle part represents the result of the previous selection pathway, including segments $o^{\text{seg}} = \{o^{\text{seg}_i} \mid i = 1, \ldots, 9, o^{\text{seg}_i} \in \mathbb{R}^{C\times W \times H}\}$ and the selection result of the segments (the $\text{probability}$ of each segments, a segment is selected if its $\text{probability} > 0.5$). The right part $o_t^{\text{sel}}$ represents the selected objects $o_t^{\text{sel}} \in \mathbb{R}^{C\times W \times H}$, which is gained either through the selection pathway or the tracking pathway. $o_t^{\text{sel}}$ are fed into the original policy, which is acquired via pre-training in a clean environment, to obtain the action.
-
 <div style="display: flex; justify-content: center;">
     <div style="flex: 0 0 100%; text-align: center;">
         <figure>
